@@ -39,8 +39,6 @@ const countdown = function () {
     const counter = `${addZero(days)} : ${addZero(hours)} : ${addZero(
       minutes
     )} : ${addZero(seconds)}`;
-
-    console.log(counter);
   } else {
     // Counter has expired
     alert('Counter has expired/merry christmass');
