@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +12,64 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: #f4f5f7;
+}
+
+.countdown {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./christmas-hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.countdown-title {
+  font-family: 'Kavoon', cursive;
+  letter-spacing: 0.6rem;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.countdown-text {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.countdown-card {
+  margin: 2.6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.countdown-labels {
+  background-color: rgb(244, 245, 247, 0.8);
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 12rem;
+  height: 10rem;
+}
+
+.countdown-labels h2 {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.countdown-labels p {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #d64c4c;
 }
