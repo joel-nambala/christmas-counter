@@ -73,3 +73,9 @@ body {
   letter-spacing: 0.1rem;
   color: #d64c4c;
 }
+
+.count-expired {
+  font-size: 5.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}

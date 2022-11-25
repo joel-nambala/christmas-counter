@@ -4,6 +4,8 @@ const countDays = document.querySelector('.countdown-days');
 const countHours = document.querySelector('.countdown-hours');
 const countMinutes = document.querySelector('.countdown-minutes');
 const countSeconds = document.querySelector('.countdown-seconds');
+const countdownCard = document.querySelector('.countdown-card');
+const countdownTitle = document.querySelector('.countdown-title');
 
 const addZero = function (num) {
   return num < 10 ? `0${num}` : num;
@@ -40,8 +42,12 @@ const countdown = function () {
       minutes
     )} : ${addZero(seconds)}`;
   } else {
+    countdownCard.innerHTML = '';
     // Counter has expired
-    alert('Counter has expired/merry christmass');
+    const html = `<h2 class="count-expired">Merry christmas</h2>`;
+    countdownCard.insertAdjacentHTML('beforeend', html);
+
+    countdownTitle.textContent = 'Happy holidays';
   }
 };
 
