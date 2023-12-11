@@ -11,9 +11,11 @@ const addZero = function (num) {
   return num < 10 ? `0${num}` : num;
 };
 
+const year = new Date().getFullYear();
+
 const countdown = function () {
   // Get the future and present timestamp
-  const future = new Date('2022 12 25 00:00:00').getTime();
+  const future = new Date(`${year} 12 25 00:00:00`).getTime();
   const today = new Date().getTime();
 
   // Substratc the timestamps to get the gap
